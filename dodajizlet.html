@@ -1,0 +1,123 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<title>Izleti app</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel = "stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!-- Navigacija -->
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #FF8C00;">
+  <a class="navbar-brand" href="#"><img src="slike/logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Početna <span class="sr-only">(current)</span></a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Izleti
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="popisizleta.html">Popis izleta</a>
+          <a class="dropdown-item" href="dodajizlet.html">Dodaj izlet</a>
+        </div>
+        <li class="nav-item">
+        <a class="nav-link" href="popiskorisnika.html">Korisnici <span class="sr-only">(current)</span></a> 
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Moj profil
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="profil.html">Uredi</a>
+          <a class="dropdown-item" href="mojiprijatelji.html">Moji Prijatelji</a>
+          <a class="dropdown-item" href="login.html">Odjava</a>
+        </div>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Poruke <span class="sr-only">(current)</span></a> 
+      </li>
+  </div>
+</nav>
+<!--Main-->
+<section class="features">
+<div class="container">
+   <div class="row">
+      <div class="col-lg-8 mb-4">
+        <h3>Dodaj izlet:</h3>
+        <form name="dodajizlet" id="dodajizlet" novalidate>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Naziv:</label>
+              <input type="text" class="form-control" id="ime">
+              <p class="help-block"></p>
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Cijena:</label>
+              <input type="tel" class="form-control" id="cijena">
+            </div>
+          </div>
+            <div class="control-group form-group">
+            <div class="controls">
+              <label>Lokacija:</label>
+              <input type="text" class="form-control" id="lokacija">
+            </div>
+          </div>
+            <div class="control-group form-group">
+            <div class="controls">
+              <label>Datum i vrijeme polaska:</label>
+                <input id="input" width="312" />
+                <script>
+                   $('#input').datetimepicker({ footer: true, modal: true });
+                 </script>
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Datum i vrijeme povratka:</label>
+                <input id="input2" width="312" />
+                <script>
+                   $('#input2').datetimepicker({ footer: true, modal: true });
+                 </script>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Dodaj sliku:</label>
+              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Opis izleta:</label>
+              <textarea rows="10" cols="100" class="form-control" id="message" maxlength="999" style="resize:none"></textarea>
+            </div>
+          </div>
+          <div id="success"></div>
+          <!-- For success/fail messages -->
+          <button type="submit" class="btn btn-primary" id="sendMessageButton">Pošalji</button>
+        </form>
+      </div>
+      </div>
+      </div>
+   </section>
+<!-- Footer -->
+<footer class="py-5 bg-dark ">
+    <div class="container">
+      <p class="m-0 text-center text-white">Sva prava pridržana  &copy; Izleti.hr 2019</p>
+    </div>
+ </footer>
+
+</body>
+</html>
