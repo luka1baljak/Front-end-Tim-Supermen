@@ -242,3 +242,32 @@ html {
     background: #FF8C00 !important;
     font-size: 32px;
 }
+
+/* brojac na index.html */
+
+
+
+.counter {
+    /*background-color:#f5f5f5; */
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+.count-title {
+    color:orange;
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+
+.fa-user , .fa-suitcase-rolling , .fa-mouse-pointer {
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: orange;
+   font-size: 50px;
+}
