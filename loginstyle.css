@@ -51,11 +51,34 @@ body {
 	/* content: "\f023"; */
 }
 
+#loginf::before {
+
+	content: "\f007"; 
+}
+
+#passf::before {
+
+	 content: "\f023"; 
+}
+
+#emailf::before {
+
+	content: "\f1fa"; 
+}
 
 .form-input button {
 	width: 40%;
 	margin: 5px 0 25px;
 }
+
+
+@media screen and (max-width: 600px) {
+ .form-input button {
+   
+    width: 100%;
+  }
+}
+
 .btn-success {
 	background-color: #F9812A;
 	font-size: 19px;
@@ -64,7 +87,7 @@ body {
 	border: 1px solid #daf1ff;
 }
 .btn-success:hover {
-	background-color: #EE7600;
+	background-color: #39dc79;
 	border: 1px solid #daf1ff;
 }
 .forgot {
