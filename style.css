@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
-	font-family: 'Roboto', sans-serif;
-	background-color: #f4f4f4;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
 }
 
 h1,h2,h3,h4 {
-	color:#FF8C00;
+  color:#FF8C00;
 }
 
 a {
-	color:#FF8C00;
+  color:#FF8C00;
 }
 
 a:hover {
@@ -23,15 +23,15 @@ a:hover {
 .navbar-dark .navbar-nav 
 
 {
-	font-size: 20px !important;
-	
+  font-size: 20px !important;
+  
 }
 
 
 .dropdown-item {
 
-	color:#FF8C00;
-	font-size: 20px !important;
+  color:#FF8C00;
+  font-size: 20px !important;
 
 }
 
@@ -40,8 +40,8 @@ a:hover {
 /* main */
 
 .main {
-	width: 100%;
-	padding: 10px;
+  width: 100%;
+  padding: 10px;
 }
 
 /* footer */
@@ -68,32 +68,32 @@ a:hover {
 .features
 
 {
-	padding: 100px 0;
+  padding: 100px 0;
 }
 
 h1 {
-	text-align:center;
-	padding-bottom: 30px;
+  text-align:center;
+  padding-bottom: 30px;
 }
 .feature-img img
 {
-	width:100%;
+  width:100%;
 
 }
 
 .price
 {
-	width:60px;
-	height:60px;
-	background:#ff5722;
-	color:#ffffff;
-	font-weight: 600;
-	border-radius: 60%;
-	padding:12px;
-	box-shadow: 0 0 10px 1px rgba(37,73,214,0.18);
-	position:absolute;
-	left:20px;
-	bottom:-25px;
+  width:60px;
+  height:60px;
+  background:#ff5722;
+  color:#ffffff;
+  font-weight: 600;
+  border-radius: 60%;
+  padding:12px;
+  box-shadow: 0 0 10px 1px rgba(37,73,214,0.18);
+  position:absolute;
+  left:20px;
+  bottom:-25px;
 
 }
 
@@ -107,27 +107,27 @@ h1 {
 
 .rating {
 
-	padding : 3px;
-	float:right;
-	background:#fff;
-	bottom:-1px;
-	right:0;
-	position:absolute;
+  padding : 3px;
+  float:right;
+  background:#fff;
+  bottom:-1px;
+  right:0;
+  position:absolute;
 }
 
 .features .fa
 
 {
-	font-size: 15px;
-	color:#ff5722;
+  font-size: 15px;
+  color:#ff5722;
 }
 
 .feature-details
 
 {
 
-	padding:20px;
-	text-align:justify;	
+  padding:20px;
+  text-align:justify; 
 }
 
 .features-details h4
@@ -157,13 +157,13 @@ box-shadow: 0 0 10px 1px rgba(249, 105, 14,0.5);
 /* submit button */
 
 .btn-primary {
-	background-color:#FF8C00;
-	border-color:#FF8C00;
+  background-color:#FF8C00;
+  border-color:#FF8C00;
 }
 
 .btn-primary:hover {
-	background-color:#39dc79;
-	border-color:#39dc79;
+  background-color:#39dc79;
+  border-color:#39dc79;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
@@ -202,19 +202,19 @@ border-color:#39dc79;
 /* Respozivna google mapa (div class & iframe class) */
 
 .googlemapa {
-	height: 0;
-	overflow: hidden;
-	padding-bottom: 60%; /* aspect ratio */
-	position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 60%; /* aspect ratio */
+  position: relative;
 }
 
 .googlemap {
-	border: 0;
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 /* Responsive box-sizing */
@@ -232,7 +232,7 @@ html {
 
   .gj-picker-md [role=header] 
 {
-	    background: #FF8C00 !important; 
+      background: #FF8C00 !important; 
 }
 
 .gj-picker-md [role=footer] button.gj-button-md {
@@ -264,7 +264,6 @@ html {
     margin-bottom: 0;
     text-align: center;
 }
-
 
 
 .fa-user , .fa-suitcase-rolling , .fa-mouse-pointer {
@@ -314,7 +313,7 @@ html {
 .profile-head h6{
     color: #FF8C00;
 }
-.emp-profile #profilbutton{
+.emp-profile .btn-primary{
    
     width: 100%;
     padding: 2%;
@@ -367,4 +366,12 @@ html {
 .profile-tab p{
     font-weight: 600;
     color: #FF8C00;
+}
+
+
+@media screen and (max-width: 600px) {
+  .btn-primary {
+   
+    width: 100%;
+  }
 }

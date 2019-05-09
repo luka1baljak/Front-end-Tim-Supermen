@@ -48,22 +48,114 @@
   </div>
 </nav>
 <!--Main-->
-<section class="features">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3">
-            <ul class="list-group">
-                <li class="list-group-item text-muted" contenteditable="false"><h4>Profil</h4> <i class="fas fa-undo" onClick="location.href='index.html'"></i></li>
-                <li class="list-group-item text-left"><img src="slike/korisnik.jpg"></li>
-                <li class="list-group-item text-left"><span class="pull-left"><strong class="">Korisničko ime: </strong></span> pperic </li>
-                <li class="list-group-item text-left"><span class="pull-left"><strong class="">Ime: </strong></span> Pero</li>
-                <li class="list-group-item text-left"><span class="pull-left"><strong class="">Prezime: </strong></span> Peric </li>
-                <li class="list-group-item text-left"><span class="pull-left"><strong class="">Broj prijavljenih izleta: </strong></span> 15 </li>
-       </ul>
-       </div>
-       </div>
-</div>
-</section>
+<div class="container emp-profile">
+            <form method="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="profile-img">
+                            <img src="slike/korisnik.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="profile-head">
+                                    <h5>
+                                        Pero Peric
+                                    </h5>
+                                    <h6>
+                                        Korisnik
+                                    </h6>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Profil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Popis izleta</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                       <button type="button" class="btn btn-primary" href="#">Dodaj za prijatelja</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="tab-content profile-tab" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Korisničko ime</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>pperic</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Ime</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>Pero</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Prezime</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>Peric</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Email</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>pperic@gmail.com</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Datum rođenja</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>05/05/1990</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Broj telefona</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>098123213</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>O meni</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p> tu ide nesto o meni bla bla bla</p>
+                                            </div>
+                                        </div>
+                                        
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p>Izlet1</p>
+                                                <p>Izlet2</p>
+                                                <p>Izlet3</p>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>           
+        </div>
 <!-- Footer -->
 <footer class="py-5 bg-dark ">
     <div class="container">
