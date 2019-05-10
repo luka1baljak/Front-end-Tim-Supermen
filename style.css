@@ -5,7 +5,7 @@ body {
   background-color: #f4f4f4;
 }
 
-h1,h2,h3,h4 {
+h1,h2,h3,h4,h5 {
   color:#FF8C00;
 }
 
@@ -17,6 +17,7 @@ a:hover {
 
  color:#39dc79;
 }
+
 
 /* navmenu */
 
